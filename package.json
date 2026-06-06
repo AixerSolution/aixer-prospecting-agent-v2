@@ -1,0 +1,14 @@
+{
+  "name": "aixer-prospecting-agent-v2",
+  "version": "2.0.0",
+  "description": "Daily AI prospecting agent v2 — directory-grounded, contact-verified, email + WhatsApp outreach",
+  "type": "module",
+  "scripts": {
+    "start": "node prospecting_v2.mjs",
+    "prospect": "node prospecting_v2.mjs",
+    "prospect:sector": "node prospecting_v2.mjs --sector"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.37.0"
+  }
+}

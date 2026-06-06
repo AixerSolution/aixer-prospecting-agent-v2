@@ -1,0 +1,60 @@
+{
+  "version": "2.0",
+  "description": "WhatsApp cold outreach templates by service angle — Aixer Solutions",
+  "rules": [
+    "Under 100 words total — WhatsApp is conversational, not a pitch deck",
+    "Open with 'Hi [first_name],' — casual, direct",
+    "One specific reference to their company or signal (not generic)",
+    "One plain-language value proposition",
+    "Close with one simple question — not a demand",
+    "Sign off: first name + company only (no email address in WhatsApp)",
+    "No corporate jargon: no 'leverage', 'synergy', 'transformation journey', 'I hope this message finds you well'",
+    "Short paragraphs with line breaks — easier to read on mobile",
+    "Do NOT include a subject line"
+  ],
+  "variable_guide": {
+    "{first_name}": "Verified first name of decision-maker",
+    "{company}": "Company name",
+    "{sector}": "Industry sector",
+    "{signal}": "Specific recent signal (1 sentence, numbers if possible)",
+    "{pain_point}": "The specific problem this signal implies",
+    "{outcome}": "What Aixer Solutions would fix in plain language"
+  },
+  "templates": {
+    "process_automation": {
+      "trigger": "Operational headcount growing faster than revenue; manual bottleneck visible",
+      "body": "Hi {first_name},\n\nSaw that {company} {signal} — that level of growth usually means manual processes start becoming the constraint.\n\nWe work with Singapore {sector} businesses to automate those workflows, typically cutting ops overhead by 25–40% in 6–8 weeks.\n\nWould it be useful to see what that could look like for {company}?\n\nHon Mun\nAixer Solutions"
+    },
+    "supply_chain_visibility": {
+      "trigger": "Logistics or inventory challenges; warehouse expansion; new distribution points",
+      "body": "Hi {first_name},\n\nNoticed {company} {signal} — at that scale, inventory visibility usually becomes the first thing that breaks.\n\nWe build real-time supply chain AI for Singapore {sector} companies — no enterprise ERP price tag, deployed in weeks.\n\nOpen to a quick walkthrough of what this looks like?\n\nHon Mun\nAixer Solutions"
+    },
+    "customer_ai": {
+      "trigger": "High customer volume growth; support team hiring; B2C or e-commerce expansion",
+      "body": "Hi {first_name},\n\n{company} {signal} — that kind of customer growth tends to bring support costs up in parallel.\n\nWe help Singapore {sector} businesses handle 60–80% of customer queries with AI agents, so the team focuses on the complex cases.\n\nWant me to put together a 2-page overview of what this could look like for {company}?\n\nHon Mun\nAixer Solutions"
+    },
+    "multi_agent_orchestration": {
+      "trigger": "Cross-department coordination overhead; rapid scaling across multiple functions",
+      "body": "Hi {first_name},\n\n{company}'s {signal} tells me you're managing complexity across multiple teams — and that coordination overhead rarely shows up cleanly in any one budget.\n\nWe design AI systems for Singapore {sector} businesses that automate the handoffs between ops, finance, and customer teams.\n\nWorth 15 minutes to see if this applies to {company}?\n\nHon Mun\nAixer Solutions"
+    },
+    "digital_transformation": {
+      "trigger": "Legacy systems; new leadership with tech mandate; digital transformation announcement",
+      "body": "Hi {first_name},\n\n{signal} at {company} is a strong signal that something has to change — but most transformation projects stall because they start with systems instead of outcomes.\n\nWe deploy AI agents for Singapore {sector} businesses that show real results in 6–8 weeks, not 18 months.\n\nHappy to share what's worked for similar-sized businesses here in Singapore?\n\nHon Mun\nAixer Solutions"
+    }
+  },
+  "tone_guide": {
+    "do": [
+      "Peer-to-peer — you're a consultant, not a vendor",
+      "Specific company references feel relevant, not spammy",
+      "Short questions feel like a conversation starter",
+      "Plain English — no industry consultant jargon"
+    ],
+    "do_not": [
+      "Do not use emojis in first contact",
+      "Do not include pricing or package details",
+      "Do not list multiple service options",
+      "Do not use bullet points in WhatsApp messages",
+      "Do not cc or attach anything — WhatsApp is conversational"
+    ]
+  }
+}

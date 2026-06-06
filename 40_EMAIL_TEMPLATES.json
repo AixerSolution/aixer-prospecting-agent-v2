@@ -1,0 +1,70 @@
+{
+  "version": "2.0",
+  "description": "Cold email outreach templates by service angle — Aixer Solutions",
+  "rules": [
+    "Always open with a SPECIFIC fact about the company — never a generic opener",
+    "Reference the exact signal that triggered interest (numbers, dates)",
+    "Name one specific pain point, not vague 'inefficiency'",
+    "Propose ONE service, not a menu",
+    "End with a micro-offer: 15-min call or 2-page audit",
+    "Use verified decision-maker's first name only",
+    "Body: 3–4 sentences maximum",
+    "Tone: consultant peer-to-peer, not vendor pitch",
+    "Do NOT use: 'leverage', 'synergy', 'cutting-edge', 'game-changer', 'I hope this finds you well'"
+  ],
+  "variable_guide": {
+    "{first_name}": "Verified first name of decision-maker",
+    "{company}": "Company name",
+    "{sector}": "Industry sector",
+    "{recent_signal}": "Specific recent event (hiring numbers, funding, expansion news)",
+    "{pain_point}": "Specific inferred pain point",
+    "{volume_metric}": "A specific operational metric (orders/day, customers, SKUs)"
+  },
+  "templates": {
+    "process_automation": {
+      "trigger": "Operational headcount growing faster than revenue; manual process bottleneck",
+      "subject_variants": [
+        "How {company} can handle 3x volume without adding headcount",
+        "Cutting {company}'s ops costs — quick look",
+        "{recent_signal_hook} — something we can fix in 6 weeks"
+      ],
+      "body": "Hi {first_name},\n\nI noticed {company} {recent_signal} — that's usually a strong signal that manual processes are becoming the constraint on growth.\n\nWe work with Singapore {sector} companies to automate {pain_point} using coordinated AI agents, typically cutting operational overhead by 25–40% within 8 weeks.\n\nWould a 15-minute call this week to show you what's possible be worth your time?\n\nBest,\nHon Mun\nAixer Solutions | hmchan@aixers.com"
+    },
+    "supply_chain_visibility": {
+      "trigger": "Logistics or inventory challenges; warehouse expansion; new distribution points",
+      "subject_variants": [
+        "{company}'s supply chain blind spots — quick fix available",
+        "Real-time visibility for {company}'s operations",
+        "How we helped a Singapore {sector} company cut stockouts by 60%"
+      ],
+      "body": "Hi {first_name},\n\nSaw that {company} {recent_signal} — at that scale, supply chain visibility usually becomes the bottleneck before anything else does.\n\nWe build AI systems for Singapore {sector} companies that deliver real-time inventory and demand forecasting without the enterprise ERP price tag or 18-month timeline.\n\nOpen to a 15-minute walkthrough of what this looks like in practice?\n\nBest,\nHon Mun\nAixer Solutions | hmchan@aixers.com"
+    },
+    "customer_ai": {
+      "trigger": "High customer volume; B2C or e-commerce growth; customer support team hiring",
+      "subject_variants": [
+        "Handling {company}'s customer volume without proportional headcount",
+        "Reducing {company}'s support tickets by 60% — here's how",
+        "{company}'s customer experience at scale"
+      ],
+      "body": "Hi {first_name},\n\nNoticed {company} {recent_signal} — growing customer volume at that pace usually means support costs are climbing in parallel.\n\nWe help Singapore {sector} companies deploy AI agents that handle 60–80% of customer queries automatically, freeing the team for complex and high-value interactions.\n\nWould a 2-page automation audit of your customer journey be useful? Happy to put one together.\n\nBest,\nHon Mun\nAixer Solutions | hmchan@aixers.com"
+    },
+    "multi_agent_orchestration": {
+      "trigger": "Complex cross-department workflows; coordination overhead; rapid scaling across functions",
+      "subject_variants": [
+        "Coordinating {company}'s ops, sales, and finance without the overhead",
+        "Multi-department AI for {company} — 6-week deployment",
+        "How we cut cross-team coordination time by 50% for a Singapore {sector} company"
+      ],
+      "body": "Hi {first_name},\n\n{company}'s {recent_signal} tells me you're managing complexity across multiple teams — and the coordination overhead is usually the hidden cost that doesn't show up in any single department's budget.\n\nWe design multi-agent AI systems for Singapore {sector} companies that automate the handoffs between operations, finance, and customer teams — reducing coordination overhead by 40–60%.\n\nWorth 15 minutes to show you what this looks like for a {sector} business at your stage?\n\nBest,\nHon Mun\nAixer Solutions | hmchan@aixers.com"
+    },
+    "digital_transformation": {
+      "trigger": "Legacy systems; new leadership with tech mandate; digital transformation announcement",
+      "subject_variants": [
+        "{company}'s digital transformation — where AI fits in",
+        "Skipping the 3-year roadmap at {company}",
+        "AI-first ops for {company} — not what you'd expect"
+      ],
+      "body": "Hi {first_name},\n\n{recent_signal} at {company} signals a real appetite for change — and most transformation projects stall because they start with systems rather than outcomes.\n\nWe work with Singapore {sector} companies to deploy AI agents that show measurable results in 6–8 weeks, without the multi-year ERP commitment.\n\nOpen to a 15-minute call to share what's worked for similar-sized {sector} businesses here in Singapore?\n\nBest,\nHon Mun\nAixer Solutions | hmchan@aixers.com"
+    }
+  }
+}

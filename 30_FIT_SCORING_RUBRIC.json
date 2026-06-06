@@ -1,0 +1,114 @@
+{
+  "version": "2.0",
+  "description": "AI consultancy fit scoring rubric — Aixer Solutions Singapore SME targeting",
+  "dimensions": {
+    "revenue_stage": {
+      "weight": 0.10,
+      "description": "Can they afford a SGD 3K–25K AI consultancy engagement?",
+      "scoring_guide": {
+        "0.9": "SGD 1M–5M revenue — strong SME budget, decision-maker has authority",
+        "0.7": "SGD 300K–1M revenue — moderate budget, phased pilot approach needed",
+        "0.3": "SGD 100K–300K revenue — tight budget, revisit in 6–12 months",
+        "0.1": "Above SGD 5M — outside target SME range"
+      }
+    },
+    "tech_maturity": {
+      "weight": 0.25,
+      "description": "Can they adopt and integrate AI solutions without prohibitive change management?",
+      "scoring_guide": {
+        "1.0": "Actively hiring AI/ML engineers or data scientists — tech-first culture",
+        "0.85": "Modern cloud stack (AWS/GCP/Azure), hiring general tech roles",
+        "0.7": "Has internal IT team, some cloud adoption, basic digital ops",
+        "0.4": "Legacy systems dominant, IT is mostly support function",
+        "0.2": "No visible tech investment in last 2 years — high change risk"
+      }
+    },
+    "automation_readiness": {
+      "weight": 0.30,
+      "description": "Do they have clear process pain points AI can solve within 6–8 weeks?",
+      "scoring_guide": {
+        "1.0": "Operational headcount growing faster than revenue — textbook automation case",
+        "0.95": "Public complaints (Glassdoor, news) about process speed or errors",
+        "0.85": "High operational volume with no visible automation — obvious gap",
+        "0.6": "Some automation but clear gaps in handoff or exception handling",
+        "0.3": "Already heavily automated — limited net new opportunity"
+      }
+    },
+    "customer_ai_readiness": {
+      "weight": 0.10,
+      "description": "Is customer-facing AI (chatbot, recommendation, personalisation) relevant?",
+      "scoring_guide": {
+        "1.0": "E-commerce or SaaS — direct customer AI applicability at scale",
+        "0.95": "B2C with high customer volume (1,000+ customers)",
+        "0.7": "B2B2C or mixed model with end-consumer touchpoints",
+        "0.4": "Pure B2B with small customer count (<100 accounts)",
+        "0.2": "Government-facing or internal-only — customer AI not applicable"
+      }
+    },
+    "multi_agent_fit": {
+      "weight": 0.25,
+      "description": "Do they need coordinated AI workflows across departments or processes?",
+      "scoring_guide": {
+        "1.0": "Cross-departmental workflows with clear handoff pain — ideal multi-agent case",
+        "0.95": "Supply chain or logistics requiring real-time coordination",
+        "0.8": "Operations + customer service + finance touchpoints all active",
+        "0.4": "Single department automation only — multi-agent overkill",
+        "0.15": "Single simple use case — chatbot or report generator"
+      }
+    }
+  },
+  "red_flags": [
+    {
+      "id": "deployed_competitor_ai",
+      "description": "Company has recently deployed a competing AI solution",
+      "action": "PASS — locked in",
+      "override_score": 0
+    },
+    {
+      "id": "too_small",
+      "description": "Under 10 employees or estimated revenue under SGD 300K",
+      "action": "PASS — too early",
+      "penalty": 0.4
+    },
+    {
+      "id": "government_only",
+      "description": "Sells exclusively to Singapore government — long procurement cycles",
+      "action": "NURTURE — revisit when govt AI spend opens",
+      "penalty": 0.2
+    }
+  ],
+  "green_flags": [
+    {
+      "id": "founder_seeking_tech",
+      "description": "Founder/CEO posting about operational challenges on LinkedIn",
+      "bonus": 0.1
+    },
+    {
+      "id": "recent_funding",
+      "description": "Raised funding in last 12 months — capital available",
+      "bonus": 0.1
+    },
+    {
+      "id": "competitor_using_ai",
+      "description": "Main competitor has announced AI adoption — urgency created",
+      "bonus": 0.05
+    },
+    {
+      "id": "rapid_ops_hiring",
+      "description": "Hiring 20%+ headcount in operational/support roles — classic scaling pain",
+      "bonus": 0.15
+    },
+    {
+      "id": "expansion_announcement",
+      "description": "Announced new market entry, product line, or facility",
+      "bonus": 0.1
+    }
+  ],
+  "thresholds": {
+    "PASS":       { "min": 0.0,  "max": 0.3,  "action": "Skip — not a fit at this stage" },
+    "NURTURE":    { "min": 0.3,  "max": 0.5,  "action": "Note, check back in 6 months" },
+    "FOLLOW_UP":  { "min": 0.5,  "max": 0.7,  "action": "Send outreach — may need warm intro or longer nurture" },
+    "PRIORITIZE": { "min": 0.7,  "max": 0.85, "action": "Immediate outreach this week" },
+    "URGENT":     { "min": 0.85, "max": 1.0,  "action": "Reach out today — high fit, time-sensitive" }
+  }
+}

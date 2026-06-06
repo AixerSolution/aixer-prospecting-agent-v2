@@ -1,0 +1,357 @@
+{
+  "version": "2.0",
+  "description": "Singapore SME prospecting search matrix v2 — directory-grounded seeding only",
+  "sectors": {
+    "Manufacturing & Logistics": {
+      "directory_sources": [
+        {
+          "name": "Singapore Manufacturers' Federation (SMF)",
+          "url": "smfederation.org.sg",
+          "type": "industry_association",
+          "rationale": "Official manufacturing industry body — verified SME member registry covering precision engineering, food, packaging sub-sectors",
+          "search_approach": "Browse member directory at smfederation.org.sg, filter by sub-sector"
+        },
+        {
+          "name": "Logistics Association Singapore (LAS)",
+          "url": "las.org.sg",
+          "type": "industry_association",
+          "rationale": "Covers 3PL, freight forwarding, warehousing SME members with active Singapore operations",
+          "search_approach": "Browse member listings at las.org.sg/members"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) Member Directory",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Cross-sector SME registry — largest business federation in Singapore with filterable company listings",
+          "search_approach": "Search SBF member directory filtered to manufacturing and logistics categories"
+        },
+        {
+          "name": "Singapore Precision Engineering Association (SPEA)",
+          "url": "spea.org.sg",
+          "type": "industry_association",
+          "rationale": "Covers CNC machining, tooling, precision parts SMEs — sub-sector with strong automation pain",
+          "search_approach": "Browse member list on spea.org.sg"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "hiring operations coordinators at scale without automation",
+        "expanding warehouse capacity manually",
+        "implementing legacy ERP under pressure",
+        "supply chain delays and stockouts",
+        "manual inventory tracking across multiple locations"
+      ],
+      "service_fit": ["process_automation", "supply_chain_visibility", "multi_agent_orchestration"]
+    },
+    "Retail & E-commerce": {
+      "directory_sources": [
+        {
+          "name": "Retail Association of Singapore (RAS)",
+          "url": "ras.org.sg",
+          "type": "industry_association",
+          "rationale": "Official retail industry body — member directory includes specialty retailers, F&B chains, and boutique brands",
+          "search_approach": "Browse member listings on ras.org.sg/members"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) Member Directory",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Broad SME registry — filter to wholesale, retail, and consumer goods categories",
+          "search_approach": "Search SBF directory filtered to retail and consumer goods sector"
+        },
+        {
+          "name": "Singapore Chinese Chamber of Commerce & Industry (SCCCI)",
+          "url": "sccci.org.sg",
+          "type": "chamber_of_commerce",
+          "rationale": "Large chamber with strong retail and trading SME membership base in Singapore",
+          "search_approach": "Search SCCCI member directory for retail and trading members"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "customer support volume scaling faster than team",
+        "inventory management across multiple channels",
+        "returns processing bottleneck",
+        "personalisation at scale without data team",
+        "multi-channel order management chaos"
+      ],
+      "service_fit": ["customer_ai", "process_automation", "multi_agent_orchestration"]
+    },
+    "Financial Services": {
+      "directory_sources": [
+        {
+          "name": "Singapore Fintech Association (SFA)",
+          "url": "singaporefintech.org",
+          "type": "industry_association",
+          "rationale": "Official fintech industry body — member directory includes early-stage and growth-stage fintech SMEs",
+          "search_approach": "Browse member directory on singaporefintech.org/members"
+        },
+        {
+          "name": "Association of Financial Advisers Singapore (AFA)",
+          "url": "afa.org.sg",
+          "type": "professional_body",
+          "rationale": "Covers IFA and wealth advisory firms — high compliance burden, strong automation pain",
+          "search_approach": "Search AFA member firm listings on afa.org.sg"
+        },
+        {
+          "name": "Life Insurance Association Singapore (LIA)",
+          "url": "lia.org.sg",
+          "type": "professional_body",
+          "rationale": "Insurance sector SME members with manual policy operations and claims workflows",
+          "search_approach": "Browse LIA member companies and associated advisory firms"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) — Financial Services",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Supplementary source — filter to financial services and accounting firms",
+          "search_approach": "Filter SBF directory to financial services and accounting categories"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "compliance reporting manual process consuming resources",
+        "fraud detection requiring manual review queue",
+        "customer KYC onboarding bottleneck",
+        "loan underwriting manual and slow",
+        "regulatory reporting labour-intensive"
+      ],
+      "service_fit": ["process_automation", "customer_ai", "multi_agent_orchestration"]
+    },
+    "Professional Services": {
+      "directory_sources": [
+        {
+          "name": "Law Society of Singapore — Law Firm Directory",
+          "url": "lawsociety.org.sg",
+          "type": "professional_body",
+          "rationale": "Official registry of all practicing law firms in Singapore — strong document automation pain",
+          "search_approach": "Search law firm directory on lawsociety.org.sg/find-a-lawyer"
+        },
+        {
+          "name": "Institute of Singapore Chartered Accountants (ISCA)",
+          "url": "isca.org.sg",
+          "type": "professional_body",
+          "rationale": "Official accounting body — SME accounting and audit firms with manual billing and compliance workflows",
+          "search_approach": "Browse ISCA public practice firm directory"
+        },
+        {
+          "name": "Singapore Institute of Architects (SIA)",
+          "url": "sia.org.sg",
+          "type": "professional_body",
+          "rationale": "Covers architecture and design consultancy firms — proposal and project management pain",
+          "search_approach": "Search SIA registered practice directory on sia.org.sg"
+        },
+        {
+          "name": "Association of Small & Medium Enterprises (ASME)",
+          "url": "asme.org.sg",
+          "type": "trade_association",
+          "rationale": "SME-focused association with broad professional services membership including HR, consulting, and advisory firms",
+          "search_approach": "Browse ASME member directory filtered to professional services"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "document review and contract analysis manual",
+        "billing invoicing and collections manual process",
+        "knowledge management gaps across teams",
+        "proposal writing time-intensive",
+        "research and analysis bottleneck slowing delivery"
+      ],
+      "service_fit": ["process_automation", "multi_agent_orchestration", "customer_ai"]
+    },
+    "Education": {
+      "directory_sources": [
+        {
+          "name": "Committee for Private Education (CPE) — Registered School List",
+          "url": "cpe.gov.sg",
+          "type": "government_registry",
+          "rationale": "Official Singapore government registry of all registered private education institutions — verified, active entities",
+          "search_approach": "Browse CPE registered school list at cpe.gov.sg/home/for-students/registered-schools"
+        },
+        {
+          "name": "SkillsFuture Singapore — Approved Training Organisation List",
+          "url": "skillsfuture.gov.sg",
+          "type": "government_registry",
+          "rationale": "Registry of approved corporate training providers — SMEs with scheduling and enrolment pain",
+          "search_approach": "Search SkillsFuture Course Directory for ATO (Approved Training Organisation) listings"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) — Education Sector",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Supplementary source for education and enrichment SMEs not on CPE/SkillsFuture lists",
+          "search_approach": "Filter SBF member directory to education and training category"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "manual student enrolment and scheduling across multiple centres",
+        "tutor-to-student matching and timetabling done in spreadsheets",
+        "parent communication and progress updates handled manually",
+        "corporate training scheduling and attendance tracking manual",
+        "student payment collection and reminders managed by admin staff"
+      ],
+      "service_fit": ["process_automation", "customer_ai", "multi_agent_orchestration"]
+    },
+    "Wholesale and Retail Trade": {
+      "directory_sources": [
+        {
+          "name": "Singapore Chinese Chamber of Commerce & Industry (SCCCI)",
+          "url": "sccci.org.sg",
+          "type": "chamber_of_commerce",
+          "rationale": "Largest chamber in Singapore — strong wholesale and trading SME membership across food, consumer goods, and industrial sectors",
+          "search_approach": "Search SCCCI member directory filtered to wholesale and trading categories"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) — Wholesale & Trade",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Cross-sector business federation — filter to wholesale trade and distribution category",
+          "search_approach": "Filter SBF member directory to wholesale and distribution sector"
+        },
+        {
+          "name": "Singapore Malay Chamber of Commerce & Industry (SMCCI)",
+          "url": "smcci.org.sg",
+          "type": "chamber_of_commerce",
+          "rationale": "Active chamber with wholesale food, consumer goods, and trading SME members",
+          "search_approach": "Browse SMCCI member directory for trading and distribution companies"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "manual order processing and inventory reconciliation across branches",
+        "wholesale pricing and discount management done in spreadsheets",
+        "distributor route planning and delivery tracking manual",
+        "multi-location stock visibility gaps causing stockouts or overstock",
+        "customer reorder reminders and follow-ups done manually"
+      ],
+      "service_fit": ["process_automation", "multi_agent_orchestration", "customer_ai"]
+    },
+    "Healthcare": {
+      "directory_sources": [
+        {
+          "name": "Singapore Medical Association (SMA) — Clinic Directory",
+          "url": "sma.org.sg",
+          "type": "professional_body",
+          "rationale": "Official registry of GP clinics and specialist practices — appointment and patient management pain",
+          "search_approach": "Search SMA clinic finder and member practice listings"
+        },
+        {
+          "name": "Singapore Dental Association (SDA)",
+          "url": "sda.org.sg",
+          "type": "professional_body",
+          "rationale": "Registry of dental practices — multi-location clinic chains with scheduling and billing inefficiencies",
+          "search_approach": "Browse SDA member practice directory"
+        },
+        {
+          "name": "Allied Health Professions Council (AHPC)",
+          "url": "ahpc.edu.sg",
+          "type": "government_registry",
+          "rationale": "Covers physiotherapy, occupational therapy, and allied health practices — underserved on automation",
+          "search_approach": "Search AHPC registered premises and practices"
+        },
+        {
+          "name": "Singapore Business Federation (SBF) — Healthcare",
+          "url": "sbf.org.sg",
+          "type": "trade_association",
+          "rationale": "Supplementary source for healthcare SMEs not covered by professional bodies (e.g. homecare, wellness)",
+          "search_approach": "Filter SBF directory to healthcare and wellness sector"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "appointment scheduling and reminders manual",
+        "patient records management fragmented",
+        "billing and insurance claims processing slow",
+        "patient engagement and follow-up manual",
+        "clinical operations reporting manual"
+      ],
+      "service_fit": ["process_automation", "customer_ai", "multi_agent_orchestration"]
+    },
+    "Electricity, Gas, Steam and Air Conditioning Services": {
+      "low_online_presence": true,
+      "sub_sector_focus": "Focus on these five sub-sectors: (1) ACMV contractors — air-conditioning installation, mechanical ventilation, refrigeration servicing (BCA ME05); (2) electrical works contractors — commercial and industrial electrical installation (BCA EW01/EW02); (3) plumbing and gas fitting contractors (BCA ME11); (4) energy management companies and ESCOs — Green Mark consultancies, energy audit firms, retro-commissioning specialists; (5) building automation system (BAS) integrators. Do NOT include electricity retailers — most Singapore independent retailers wound up in 2021.",
+      "directory_sources": [
+        {
+          "name": "Energy Market Authority (EMA) — Licensed Electricity Retailers",
+          "url": "ema.gov.sg",
+          "type": "government_registry",
+          "rationale": "Official Singapore government registry of all licensed electricity retailers — includes SME-scale independent retailers with billing and customer management automation pain",
+          "search_approach": "Search EMA licensed retailer list at ema.gov.sg/our-work/retail-market — focus on smaller independent retailers, not SP Group or large utilities"
+        },
+        {
+          "name": "BCA Contractors Registry — ME05 (Air-Conditioning & Mechanical Ventilation Works)",
+          "url": "bca.gov.sg",
+          "type": "government_registry",
+          "rationale": "Official BCA registry of licensed ACMV contractors — SME aircon installation and maintenance firms with technician scheduling and compliance documentation pain",
+          "search_approach": "Search BCA contractor registry filtered to ME05 workhead, C2–B1 grade range (SGD 650K–30M revenue range)"
+        },
+        {
+          "name": "BCA Contractors Registry — EW01/EW02 (Electrical Works)",
+          "url": "bca.gov.sg",
+          "type": "government_registry",
+          "rationale": "Registry of licensed electrical installation contractors — SME firms with manual job scheduling, certification tracking, and billing bottlenecks",
+          "search_approach": "Search BCA contractor registry filtered to EW01 or EW02 workhead, C2–B1 grade range"
+        },
+        {
+          "name": "Singapore Contractors Association (SCAL) — M&E Specialist Members",
+          "url": "scal.com.sg",
+          "type": "industry_association",
+          "rationale": "SCAL M&E specialist contractor members include ACMV, gas fitting, and electrical SMEs — active industry directory with contact details",
+          "search_approach": "Browse SCAL member directory filtered to mechanical and electrical specialist contractors at scal.com.sg/members"
+        }
+      ],
+      "seed_companies": [],
+      "pain_signals": [
+        "technician scheduling and dispatch across multiple job sites managed in spreadsheets or phone calls",
+        "service contract billing and renewal tracking manual — missed renewals and late invoicing common",
+        "spare parts inventory across service vehicles untracked in real time",
+        "compliance certification and service report documentation manual and paper-based",
+        "customer service call follow-up and complaint resolution slow without a system"
+      ],
+      "service_fit": ["process_automation", "multi_agent_orchestration", "customer_ai"]
+    },
+    "Construction": {
+      "directory_sources": [
+        {
+          "name": "BCA Contractors Registry",
+          "url": "bca.gov.sg",
+          "type": "government_registry",
+          "rationale": "Official BCA contractor registry — all licensed Singapore construction companies with grade-based revenue signals",
+          "search_approach": "Search BCA directory for CW01/CW02 grade C2–B1 contractors (SGD 1–30M revenue range)"
+        },
+        {
+          "name": "Singapore Contractors Association (SCAL)",
+          "url": "scal.com.sg",
+          "type": "industry_association",
+          "rationale": "Official contractors association — member list includes active SGD 1–15M general and specialist contractors",
+          "search_approach": "Browse SCAL member directory on scal.com.sg"
+        }
+      ],
+      "seed_companies": [
+        { "name": "Beng Hwa Builders Pte Ltd", "uen": "199507356H", "bca_grade": "CW01 C2" },
+        { "name": "BM Building Pte Ltd", "uen": "199402363D", "bca_grade": "CW01 C2" },
+        { "name": "Arena Construction Pte Ltd", "uen": "199501741C", "bca_grade": "CW01 C2" },
+        { "name": "Sing & San Construction Pte Ltd", "uen": "198401867W", "bca_grade": "CW01 C2 / CW02 B2", "website": "singnsan.com.sg" },
+        { "name": "Ever San Construction Pte Ltd", "uen": "198802905E", "bca_grade": "CW01 C3 / CW02 C2", "website": "eversanconstruction.com" },
+        { "name": "Actus Builders Pte Ltd", "uen": "199101840K", "bca_grade": "CW01 B2 / CW02 B2" },
+        { "name": "Bestlink Construction Pte Ltd", "uen": "199603379E", "bca_grade": "CW01 B2", "website": "bestlink.com.sg" },
+        { "name": "Anchorage Construction Co Pte Ltd", "uen": "198201230H", "bca_grade": "CW01 B1 / CW02 B2", "website": "anchorage.com.sg" },
+        { "name": "Khian Heng Construction (Private) Limited", "uen": "197501623M", "bca_grade": "CW02 C2" },
+        { "name": "Join Ages Construction Pte Ltd", "uen": "199802494C", "bca_grade": "CW02 C2" },
+        { "name": "Kori Construction (S) Pte Ltd", "uen": "198205477K", "bca_grade": "CW02 C2" },
+        { "name": "Megabuilders & Development Pte Ltd", "uen": "200601566K", "bca_grade": "CW01 B1", "known_contact": "Desmond Chua" },
+        { "name": "Oung Construction (S) Pte Ltd", "uen": "199504483Z", "bca_grade": "CW01 B1", "website": "oung.com.sg" },
+        { "name": "Global Civil Engineering Pte Ltd", "uen": "201528716H", "bca_grade": "CW01 / CW02" }
+      ],
+      "pain_signals": [
+        "project scheduling and subcontractor coordination done in spreadsheets",
+        "site progress reporting and documentation manual",
+        "manpower deployment and timesheet tracking inefficient",
+        "procurement and purchase order approvals slow and paper-based",
+        "client progress updates and variation order tracking manual"
+      ],
+      "service_fit": ["process_automation", "multi_agent_orchestration", "customer_ai"]
+    }
+  }
+}

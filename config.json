@@ -1,0 +1,43 @@
+{
+  "model": "claude-sonnet-4-6",
+  "version": "2.0",
+  "sectors_rotation": [
+    "Manufacturing & Logistics",
+    "Retail & E-commerce",
+    "Financial Services",
+    "Professional Services",
+    "Healthcare",
+    "Construction",
+    "Wholesale and Retail Trade",
+    "Electricity, Gas, Steam and Air Conditioning Services"
+  ],
+  "target_criteria": {
+    "revenue_min_sgd": 100000,
+    "revenue_max_sgd": 5000000,
+    "employee_min": 5,
+    "employee_max": 200,
+    "preferred_signals_recency_months": 12
+  },
+  "fit_scoring": {
+    "qualified_threshold": 0.5,
+    "prioritize_threshold": 0.7,
+    "urgent_threshold": 0.85
+  },
+  "outreach": {
+    "max_emails_per_run": 8,
+    "sender_name": "Hon Mun Chan",
+    "sender_email": "hmchan@aixers.com",
+    "channels": ["email", "whatsapp"],
+    "best_send_days": ["Tuesday", "Wednesday", "Thursday"],
+    "best_send_hours_sgt": [9, 10, 11]
+  },
+  "contact_verification": {
+    "skip_hallucinated": true,
+    "warn_on_unverified": true
+  },
+  "airtable": {
+    "enabled": false,
+    "base_id": "",
+    "table_name": "Leads"
+  }
+}

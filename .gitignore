@@ -1,0 +1,7 @@
+node_modules/
+output/
+communicator_output/
+.env
+.env.*
+*.log
+.DS_Store
