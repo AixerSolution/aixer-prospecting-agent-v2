@@ -1,5 +1,7 @@
 # Aixer Solutions — Prospecting Agent v2 + Communicator
 
+**GitHub:** https://github.com/AixerSolution/aixer-prospecting-agent-v2
+
 An AI-powered Singapore SME lead generation system with directory-grounded seeding, contact verification, and dual-channel outreach (email + WhatsApp). Built for [Aixer Solutions](https://www.aixers.com).
 
 This is v2 — a major upgrade over v1 that eliminates hallucinated companies by sourcing exclusively from official Singapore directories (BCA, SMA, CPE, SBF, SMF, etc.) and adds a contact verification gate before any outreach is drafted.
